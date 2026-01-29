@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<style>
+body {
+font-family: Comic Sans, Impact, Calibri;
+background-color: #D4D4D4;
+max-width: 900px;/* Use max-width for fluid behaviour*/
+margin: 0 auto; /*A shorthand for centered margins */
+padding: 20px; /* Add padding to prevent content from touching the screen edges */
+}
+h1 {
+color:#000000 ;
+}
+
+p{
+color:#161716;
+}
+a:link {color:#OA1172;}
+a:visited {color:#2832C2;}
+a:hover {color:#051094;} 
+</style>
+</head>
+<body>
+<img src="images/banner.jpg" alt="The Banner of our Phone Company"> 
+
+<p>
+<a href="index.html">Homepage</a> :
+<a href="about.html">About Us</a> :
+<a href="mobile.html">Mobile Phones</a> :
+<a href="accessories.html">Accessories</a> : 
+<a href="services.html">Services</a> :
+<a href="upcoming.html">Upcoming Devices</a> :
+<a href="contact.html">Contact Us</a> :
+<a href="simcard.html">Simcards</a>
+</p>
+
+<h1>Home Page</h1>
+
+<p id="greet"></p>
+
+<script>
+const time = new Date().getHours(); 
+let greeting; 
+
+if (time < 10) {
+  greeting = "Good morning Sir / Madam";
+} else if (time < 20) { 
+  greeting = "Good afternoon Sir / Madam";  
+} else { 
+  greeting = "Good evening Sir / Madam";
+}
+
+document.getElementById("greet").innerHTML = greeting;
+
+ </script> 
+
+
+
+<img src="images/iphone1.jpg" alt="An image of an iphone" align="left" style=padding-right:70px; width="240" height="400" >
+<img src="images/iphone3.png" alt="An image of another Iphone" align="middle"  width="240" height="400" > 
+<img src="images/iphone2.jpg" alt="An image of an iphone" align="right" width="240" height="400" >
+
+<p> Welcome to Mobile World Station our website is focused on providing you with the newest updates on prior and upcoming devices, we also provide services on the best prices of simcards as well as accessories.
+
+</body>
+</html> 
